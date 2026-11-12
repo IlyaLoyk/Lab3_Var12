@@ -1,6 +1,6 @@
 namespace Lab33.DAL.Providers;
 
-/// <summary>Бінарна серіалізація через BinaryWriter/BinaryReader; властивості обробляються рефлексією.</summary>
+/// Бінарна серіалізація через BinaryWriter/BinaryReader; властивості обробляються рефлексією
 public class BinaryProvider<T> : DataProvider<T> where T : class, new()
 {
     public override string Extension => ".bin";

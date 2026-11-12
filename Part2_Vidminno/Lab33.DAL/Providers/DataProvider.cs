@@ -1,6 +1,6 @@
 namespace Lab33.DAL.Providers;
 
-/// <summary>Абстракція провайдера: відповідає за читання/запис колекції у файл певного формату.</summary>
+/// Абстракція провайдера: відповідає за читання/запис колекції у файл певного формату
 public abstract class DataProvider<T> where T : class, new()
 {
     public abstract string Extension { get; }

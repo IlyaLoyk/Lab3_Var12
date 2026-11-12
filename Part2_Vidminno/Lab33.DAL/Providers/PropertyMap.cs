@@ -2,7 +2,7 @@ using System.Reflection;
 
 namespace Lab33.DAL.Providers;
 
-/// <summary>Спільний для бінарного та користувацького провайдерів список властивостей типу (у стабільному порядку).</summary>
+/// Спільний для бінарного та користувацького провайдерів список властивостей типу
 internal static class PropertyMap<T>
 {
     public static readonly PropertyInfo[] All = typeof(T)

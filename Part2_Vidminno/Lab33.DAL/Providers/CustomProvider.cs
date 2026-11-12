@@ -2,10 +2,8 @@ using System.Globalization;
 
 namespace Lab33.DAL.Providers;
 
-/// <summary>
 /// Користувацька серіалізація: власний текстовий формат.
-/// Один об'єкт = один рядок "Властивість=значення;Властивість=значення", значення кодуються через Uri.EscapeDataString.
-/// </summary>
+
 public class CustomProvider<T> : DataProvider<T> where T : class, new()
 {
     public override string Extension => ".txt";
